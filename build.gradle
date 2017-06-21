@@ -1,0 +1,20 @@
+plugins {
+  id "org.jetbrains.intellij" version "0.2.13"
+}
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	compile 'commons-io:commons-io:2.5'
+    compileOnly files("${clionHome}/lib/clion.jar")
+}
+
+intellij {
+	alternativeIdePath = clionHome
+}
+

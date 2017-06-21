@@ -1,24 +1,12 @@
 package io.github.francoiscambell.clionarduinoplugin.wizards;
 
-import com.intellij.ide.*;
-import com.intellij.openapi.fileEditor.*;
-import com.intellij.openapi.project.*;
-import com.intellij.openapi.ui.*;
-import com.intellij.openapi.util.io.*;
-import com.intellij.openapi.vfs.*;
-import com.jetbrains.cidr.cpp.*;
-import com.jetbrains.cidr.cpp.cmake.projectWizard.*;
-import com.jetbrains.cidr.cpp.cmake.workspace.*;
-import io.github.francoiscambell.clionarduinoplugin.*;
-import io.github.francoiscambell.clionarduinoplugin.resources.*;
-
-import java.io.*;
-
 /**
  * Created by francois on 15-08-14.
  */
-public class NewArduinoProjectWizard extends CMakeProjectWizard {
-    private NewCMakeProjectStepAdapter adapter = new NewCMakeProjectStepAdapter();
+public class NewArduinoProjectWizard {/*extends CMakeProjectWizard {
+    private CMakeProjectStepAdapter adapter = new ImportCMakeProjectStepAdapter() {
+
+    };
 
     public NewArduinoProjectWizard() {
         super("New Arduino Sketch Project", "NewArduinoSketchProject");
@@ -126,4 +114,4 @@ public class NewArduinoProjectWizard extends CMakeProjectWizard {
     private void deleteBuildOutputDir(Project project) {
         FileUtil.delete(CMakeWorkspace.getInstance(project).getProjectGeneratedDir());
     }
-}
+*/}
