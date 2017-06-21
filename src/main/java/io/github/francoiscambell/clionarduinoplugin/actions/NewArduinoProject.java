@@ -28,11 +28,9 @@ public class NewArduinoProject extends AnAction {
 
     @Override
     public void actionPerformed(AnActionEvent e) {
-    	System.err.println(" >>>>>>>>>>>>>>>>>>>>>>>>>>>> POERFORM");
     	new AbstractNewProjectDialog() {
 		    @Override
 		    protected DefaultActionGroup createRootStep() {
-			    System.err.println(" >>>>>>>>>>>>>>>>>>>>>>>>>>>> ROOT STEP");
 			    return new NewArduinoProjectStep();
 		    }
 	    }.show();

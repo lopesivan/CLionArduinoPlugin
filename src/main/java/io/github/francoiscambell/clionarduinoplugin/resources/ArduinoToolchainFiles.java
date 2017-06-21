@@ -14,11 +14,11 @@ import java.io.OutputStream;
  */
 public class ArduinoToolchainFiles {
     public static InputStream getArduinoToolchainCmake() {
-        return ArduinoToolchainFiles.class.getResourceAsStream("arduino-cmake/cmake/ArduinoToolchain.cmake");
+        return ArduinoToolchainFiles.class.getResourceAsStream("/arduino-cmake/cmake/ArduinoToolchain.cmake");
     }
 
     public static InputStream getArduinoCmake() {
-        return ArduinoToolchainFiles.class.getResourceAsStream("arduino-cmake/cmake/Platform/Arduino.cmake");
+        return ArduinoToolchainFiles.class.getResourceAsStream("/arduino-cmake/cmake/Platform/Arduino.cmake");
     }
 
     public static void copyToDirectory(final VirtualFile projectRoot) {
